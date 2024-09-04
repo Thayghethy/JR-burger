@@ -3,12 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="estilos/style.css">
-    <title>JR Burguer:: Contato</title>
+    <title>JR Burguer::Contatos</title>
 </head>
 <body>
     <header>
-        <menu>
+        <div id="logomenu">
+            <img id="logo_menu" src="images/logo_pto1.png" alt="logoJRBurger">
+        </div>
+        <span id="burger" class="material-symbols-outlined" onclick="clickMenu()">
+            menu
+            </span>
+        <menu id="menu">
             <ul>
                 <li><a href="index.html" target="_self">HOME</a></li>
                 <li><a href="cardapio.html" target="_self">CARDÁPIO</a></li>
@@ -20,5 +27,11 @@
     <main>
       
     </main>
+    <script>
+       function clickMenu() {
+        var menu = document.getElementById('menu'); // Obter o elemento pelo ID
+        menu.classList.toggle('open');
+       }
+    </script>
 </body>
 </html>
