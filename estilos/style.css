@@ -41,17 +41,17 @@ span#close {
     font-size: 3.5em;
     background-color: white;
     cursor: pointer;
-    padding: 10px;
+    padding: 6px;
     position: absolute;
     right: 50px;
     top: 5px;
 }
 
 span#burger {
-    font-size: 3.0em;
+    font-size: 3.5em;
     background-color: white;
     cursor: pointer;
-    padding: 10px;
+    padding: 6px;
     transition: background-color 0.3s, color 0.3s;
     position: absolute;
     right: 40px;
