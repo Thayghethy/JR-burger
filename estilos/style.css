@@ -7,42 +7,69 @@
     background-color: #fce410;
 }
 
-header > div#logomenu {
-    background-color: white;
+header {
     width: 100vw;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 1000;
-    text-align: center;
-    padding: 10px 0;
+    background-color: white;
     border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
 }
 
-header >  div#logomenu > img {
+header > div#logomenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: white;
-    width: 252px;
-    height: 211px;
-    display: block;
-    margin: auto;
+    width: 100%;
+}
+
+header >div#logomenu > img {
+    background-color: white;
+    width: 200px;
+    height: auto;
+    margin: 0 auto;
+}
+
+span#close {
+    display: none;
+    font-size: 3.5em;
+    background-color: white;
+    cursor: pointer;
+    padding: 10px;
+    position: absolute;
+    right: 50px;
+    top: 5px;
 }
 
 span#burger {
-    background-color: rgb(48, 48, 48);
-    color: white;
-    display: block;
-    text-align: center;
-    padding: 10px;
+    font-size: 3.5em;
+    background-color: white;
     cursor: pointer;
-    position: fixed;
-    top: 211px;
-    width: 100vw;
-    z-index: 1001;
+    padding: 10px;
+    transition: background-color 0.3s, color 0.3s;
+    position: absolute;
+    right: 50px;
+    top: 5px;
 }
 
-span#burger:hover {
+span#burger:hover, span#close:hover {
     background-color: white;
+    text-shadow: 1px 1px #fce410;
     color: black;
+}
+
+header > menu.open ~ div#logomenu span#close {
+    display: block;
+}
+
+header > menu.open ~ div#logomenu span#burger {
+    display: none;
 }
 
 header > menu {
@@ -51,9 +78,10 @@ header > menu {
     transition: max-height 0.5s ease-out;
     background-color: white;
     position: fixed;
-    top: 261px;
+    top: 90px;
     width: 100vw;
     z-index: 1000;
+    text-align: center;
 }
 
 header > menu.open {
@@ -61,32 +89,38 @@ header > menu.open {
 }
 
 header > menu > ul {
+    display: block;
+    width: 100%;
     background-color: white;
-    font-size: 1.5em;
+    font-size: 1em;
     list-style: none;
-    padding: 10px;
-    text-align: center;
+    padding: 0px;
+    text-align: left;
     margin: 0px;
 }
 
 header > menu > ul > li {
     display: inline-block;
     background-color: white;
-    padding: 0 15px;
+    padding: 15px 0;
 }
 
 header > menu > ul > li > a {
+    font-size: 1.1em;
+    padding: 12px;
     text-decoration: none;
-    display: inline-block;
+    display: block;
     color: black;
     background-color: white;
+    width: 100%;
+    transition: color 0.3s, text-shadow 0.3s;
 }
 
 header > menu > ul > li > a:hover {
-    color: red;
-    text-shadow: 1px 1px 1px yellow;
+    color: #e74c3c;
+    text-shadow: 1px 1px 1px #f39c12;
 }
 
 main {
-    padding-top: 300px;
+    padding-top: 100px;
 }
