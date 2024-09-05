@@ -29,7 +29,7 @@ header > div#logomenu {
     width: 100%;
 }
 
-header >div#logomenu > img {
+header > div#logomenu > img {
     background-color: white;
     width: 200px;
     height: auto;
@@ -48,7 +48,7 @@ span#close {
 }
 
 span#burger {
-    font-size: 3.5em;
+    font-size: 3.0em;
     background-color: white;
     cursor: pointer;
     padding: 10px;
@@ -66,10 +66,12 @@ span#burger:hover, span#close:hover {
 
 header > menu.open ~ div#logomenu span#close {
     display: block;
+    color: #fce410;
 }
 
 header > menu.open ~ div#logomenu span#burger {
     display: none;
+    color: #fce410;
 }
 
 header > menu {
