@@ -38,17 +38,17 @@ header > div#logomenu > img {
 
 span#close {
     display: none;
-    font-size: 3.5em;
+    font-size: 3.2em;
     background-color: white;
     cursor: pointer;
-    padding: 6px;
+    padding: 2px;
     position: absolute;
     right: 50px;
     top: 5px;
 }
 
 span#burger {
-    font-size: 3.5em;
+    font-size: 3.2em;
     background-color: white;
     cursor: pointer;
     padding: 6px;
