@@ -54,7 +54,7 @@ span#burger {
     padding: 10px;
     transition: background-color 0.3s, color 0.3s;
     position: absolute;
-    right: 50px;
+    right: 40px;
     top: 5px;
 }
 
