@@ -19,7 +19,7 @@ body {
 
 .carousel {
     position: relative;
-    width: 70%;
+    width: 50%;
     max-width: 800px;
     overflow: hidden;
     border-radius: 10px;
@@ -119,7 +119,7 @@ span#close {
     cursor: pointer;
     padding: 2px;
     position: absolute;
-    right: 50px;
+    right: 5px;
     top: 5px;
 }
 
@@ -130,7 +130,7 @@ span#burger {
     padding: 6px;
     transition: background-color 0.3s, color 0.3s;
     position: absolute;
-    right: 40px;
+    right: 5px;
     top: 5px;
 }
 
