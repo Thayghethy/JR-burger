@@ -21,7 +21,7 @@ body {
 
 .carousel {
     position: relative;
-    width: 50%;
+    width: 80%;
     max-width: 800px;
     overflow: hidden;
     border-radius: 10px;
