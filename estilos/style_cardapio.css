@@ -1,0 +1,101 @@
+@charset "UTF-8";
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #fce410;
+    overflow-x: hidden;
+}
+main {
+    width: 90%;
+    height: auto;
+    margin-top: 0px;
+}
+
+div#titulocardapio > h2 { 
+    position: sticky;
+    top: 0px;
+    padding: 5px;
+}
+
+.produtos {
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    display: flex;
+    flex-direction: row;
+    padding: 1px;
+    margin: 2px;
+    align-items: flex-start;
+    position: relative;
+    overflow: hidden;
+    width: 80vw ;
+}
+
+.produtos img {
+    
+    background-color: white;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+
+.produtos h4 {
+    background-color: white;
+    margin: 0;
+    font-size: .5em;
+}
+
+.produtos #nomeproduto {
+    font-size: 2em;
+    background-color: white;
+    margin-bottom: 10px;
+}
+
+.produtos #precoproduto {
+    background-color: white;
+    position: absolute;
+    right: 10px;
+    top: 210px;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.produtos p {
+    background-color: white;
+    margin: 0;
+    font-size: 1em;
+}
+
+.produtos a {
+    background-color: white;
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #007bff;
+    font-size: 1em;
+}
+
+
+.produtos .toggle-btn {
+    background-color: white;
+    cursor: pointer;
+}
+
+.produtos .order-btn {
+    margin-top: 230px;
+    background-color: white;
+    margin-left: 300px;
+}
+
+.produtos .hidden {
+    display: none;
+}
+
+.produtos .toggle-btn:hover, .order-btn:hover {
+    text-shadow: .5px .5px black;
+    cursor: pointer;
+
+}
