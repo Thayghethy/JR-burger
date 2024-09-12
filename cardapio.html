@@ -12,12 +12,8 @@
     <header>
         <div id="logomenu">
             <img id="logo_menu" src="images/logo_cabecalho.png" alt="logoJRBurger">
-            <span id="close" class="material-symbols-outlined" onclick="clickMenu()">
-                close
-                </span>
-            <span id="burger" class="material-symbols-outlined" onclick="clickMenu()">
-            menu
-            </span>
+            <span id="close" class="material-symbols-outlined" onclick="clickMenu()">close</span>
+            <span id="burger" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
         </div>
         <menu id="menu">
             <ul>
@@ -33,55 +29,63 @@
             <h2>Confira nosso cardápio!</h2>
         </div>
         <section class="produtos" id="iprodutos">
-            <div class="produtos" id="salad">
-                <img src="images/icon_burger/smash_salad_icon.png" alt="salad icon">
+            <div class="produto-card" id="salad">
+                <img class="product-image" src="images/icon_burger/smash_salad_icon.png" alt="salad icon">
                 <div class="text-container">
                     <h4 id="nomeproduto">Smash Salad</h4>
                     <p class="hidden">Smash Salad - Sabor Fresco e Irresistível! <br>
                     Experimente a combinação perfeita de frescor e sabor com o nosso Smash Salad! Este hambúrguer é preparado com uma deliciosa carne de blend bovino de 90g, garantindo suculência e sabor em cada mordida. <br>
-                    
                     Coberto com queijo cheddar derretido, o Smash Salad é enriquecido com ingredientes frescos e vibrantes: tomate suculento, alface crocante e cebola para um toque de sabor extra. Tudo isso é envolvido em um pão de brioche macio e levemente tostado, e finalizado com o nosso molho especial da casa, que adiciona um sabor único e irresistível.</p>
-                    <a class="toggle-btn" onclick="toggleDescription(this)">Mais</a>
+                    <a class="toggle-btn" onclick="toggleDescription(this)">Descrição</a>
                 </div>
                 <h4 id="precoproduto">R$19,90</h4>
                 <a class="order-btn" onclick="orderNow()">Peça Já!</a>
             </div>
-
         </section>
-      <footer>
-        <a href="https://www.facebook.com/thayghethy.souzadossantos.5" target="_blank">Thayghethy Souza </a><p> - 2024 - Todos os direitos reservados</p>
-      </footer>
+        <footer>
+            <a href="https://www.facebook.com/thayghethy.souzadossantos.5" target="_blank">Thayghethy Souza </a>
+            <p> - 2024 - Todos os direitos reservados</p>
+        </footer>
     </main>
     <script>
       function clickMenu() {
-    var menu = document.getElementById('menu');
-    var burgerIcon = document.getElementById('burger');
-    var closeIcon = document.getElementById('close');
-    
-    menu.classList.toggle('open');
+        var menu = document.getElementById('menu');
+        var burgerIcon = document.getElementById('burger');
+        var closeIcon = document.getElementById('close');
+        
+        menu.classList.toggle('open');
 
-    if (menu.classList.contains('open')) {
-        burgerIcon.style.display = 'none';
-        closeIcon.style.display = 'block';
-    } else {
-        burgerIcon.style.display = 'block';
-        closeIcon.style.display = 'none';
-    }
-}
-    function toggleDescription(element) {
-        const p = element.previousElementSibling;
-        if (p.classList.contains('hidden')) {
-            p.classList.remove('hidden');
-            element.textContent = 'Menos';
+        if (menu.classList.contains('open')) {
+            burgerIcon.style.display = 'none';
+            closeIcon.style.display = 'block';
         } else {
-            p.classList.add('hidden');
-            element.textContent = 'Mais';
+            burgerIcon.style.display = 'block';
+            closeIcon.style.display = 'none';
         }
-    }
+      }
 
-    function orderNow() {
+      function toggleDescription(element) {
+        const card = element.closest('.produto-card');
+        const image = card.querySelector('.product-image');
+        const price = card.querySelector('#precoproduto');
+        const orderButton = card.querySelector('.order-btn');
+        const description = card.querySelector('p');
+
+        description.classList.toggle('hidden');
+        image.classList.toggle('hidden');
+        price.classList.toggle('hidden');
+        orderButton.classList.toggle('hidden');
+        
+        if (description.classList.contains('hidden')) {
+            element.textContent = 'Descrição';
+        } else {
+            element.textContent = 'Menos';
+        }
+      }
+
+      function orderNow() {
         window.location.href = 'pedidos.html';
-    }
+      }
     </script>
 </body>
 </html>
