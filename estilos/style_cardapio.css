@@ -61,6 +61,7 @@ div#titulocardapio > h2 {
     transition: .5s ease-in-out;
 }
 
+
 .text-container {
     background-color: white;
     flex-grow: 1;
