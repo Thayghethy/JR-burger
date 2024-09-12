@@ -35,10 +35,24 @@ div#titulocardapio > h2 {
     background-color: white; /* Fundo branco dentro da section */
     border-radius: 10px;
     border: 1px solid #ddd;
-    display: flex;
+    display: block;
     flex-direction: row;
     padding: 10px;
     margin: 10px 10px;
+    align-items: center;
+    width: 95%;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+
+.produto-card#promo {
+    background-color: white; /* Fundo branco dentro da section */
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    display: block;
+    flex-direction: row;
+    padding: 10px;
+    margin: 10px 10px 10px 10px;
     align-items: center;
     width: 95%;
     text-align: center;
@@ -57,7 +71,7 @@ div#titulocardapio > h2 {
     box-shadow: 1px 2px black;
     width: 50vw;
     height: auto;
-    margin-left: 200px;
+    margin-left: 10px;
     transition: .5s ease-in-out;
 }
 
